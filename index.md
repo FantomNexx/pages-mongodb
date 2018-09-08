@@ -1,37 +1,50 @@
-## Welcome to GitHub Pages
+[TOC]
 
-You can use the [editor on GitHub](https://github.com/FantomNexx/pages-mongodb/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+# Install manually
+Navigate to the official web page: https://www.mongodb.com
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Then click on [Get MongoDB] button.
 
-### Markdown
+On the opened page, choose [Community server] tab.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Then click [Download] button.
 
-```markdown
-Syntax highlighted code block
+Install download file (*.msi).
 
-# Header 1
-## Header 2
-### Header 3
+To make using DB a bit simpler, choose short path for the installation:
 
-- Bulleted
-- List
+`D:/mongodb/data`
 
-1. Numbered
-2. List
 
-**Bold** and _Italic_ and `Code` text
+#Configuring
+## DB path
+Navigate to the installation directory then move to \bin folder.
 
-[Link](url) and ![Image](src)
+To set db and log file location Run a command:
+
+```
+mongod --dbpath D:/mongodb/data/db --logpath d:\mongodb\log\mongodb.log --logappend --install
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+#Run service
+## Using Terminal
+To run mongoDB service manually run a command:
 
-### Jekyll Themes
+`mongod --dbpath D:\mongodb\data\db`
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/FantomNexx/pages-mongodb/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+## Using \*.bat file
+create a file mongodb run `service.bat`
 
-### Support or Contact
+Enter next text:
+```
+cd /d C:\Program Files\MongoDB\Server\4.0\bin
+mongod --dbpath D:\mongodb\data\db
+pause
+```
+Run the file when there is a need to start mongodb service.
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+
+#Run service
+If mongo command is not recognized by Windows, run a command with a full path:
+
+`"C:\Program Files\MongoDB\Server\4.0\bin\mongo.exe"`
