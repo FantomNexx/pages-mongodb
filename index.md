@@ -48,4 +48,4 @@ If mongo command is not recognized by Windows, run a command with a full path:
 `"C:\Program Files\MongoDB\Server\4.0\bin\mongo.exe"`
 
 # Link test
-[a link](https://github.com/FantomNexx/pages-mongodb/edit/master/linkpage.md)
+[A link to another page](https://github.com/FantomNexx/pages-mongodb/edit/master/linkpage.md)
