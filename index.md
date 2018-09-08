@@ -1,5 +1,3 @@
-[TOC]
-
 # Install manually
 Navigate to the official web page: https://www.mongodb.com
 
