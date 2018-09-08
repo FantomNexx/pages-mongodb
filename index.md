@@ -14,7 +14,7 @@ To make using DB a bit simpler, choose short path for the installation:
 `D:/mongodb/data`
 
 
-#Configuring
+# Configuring
 ## DB path
 Navigate to the installation directory then move to \bin folder.
 
@@ -24,7 +24,7 @@ To set db and log file location Run a command:
 mongod --dbpath D:/mongodb/data/db --logpath d:\mongodb\log\mongodb.log --logappend --install
 ```
 
-#Run service
+# Run service
 ## Using Terminal
 To run mongoDB service manually run a command:
 
@@ -42,7 +42,7 @@ pause
 Run the file when there is a need to start mongodb service.
 
 
-#Run service
+# Run service
 If mongo command is not recognized by Windows, run a command with a full path:
 
 `"C:\Program Files\MongoDB\Server\4.0\bin\mongo.exe"`
